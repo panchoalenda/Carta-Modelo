@@ -1,16 +1,12 @@
-import Header from "./componentes/Header";
-import BotonesHeader from "./componentes/BotonesHeader";
-import Buscador from "./componentes/Buscador";
-import Menu from "./componentes/Menu";
-import "./index.css";
+import { BrowserRouter } from "react-router-dom";
+import AppRoutes from "./routes/AppRoutes.jsx";
 
 export default function App() {
   return (
     <>
-      <Header />
-      <BotonesHeader/>
-      <Buscador />
-      <Menu />
+      <BrowserRouter >
+        <AppRoutes />
+      </BrowserRouter>
     </>
   );
 }

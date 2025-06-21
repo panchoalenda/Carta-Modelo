@@ -24,15 +24,15 @@ export const Bebidas = () => {
   return (
     <section className="menu">
       <NavLink to="/comida" className="menu-item" onClick={popup}>
-        <img src="/src/img/iconoComida.png" alt="Ícono de comida" />
+        <img src="img/iconoComida.png" alt="Ícono de comida" />
         <h3>Comidas</h3>
       </NavLink>
       <NavLink to="/bebidas" className="menu-item">
-        <img src="/src/img/iconoBebida.png" alt="Ícono de bebida" />
+        <img src="img/iconoBebida.png" alt="Ícono de bebida" />
         <h3>Bebidas</h3>
       </NavLink>
       <NavLink to="/postres" className="menu-item">
-        <img src="/src/img/iconoPostre.png" alt="Ícono de postres" />
+        <img src="img/iconoPostre.png" alt="Ícono de postres" />
         <h3>Postres</h3>
       </NavLink>
     </section>

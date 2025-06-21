@@ -2,7 +2,7 @@ export default function Header() {
   return (
     <header>
       <div className="encabezado imagen">
-        <img src="/src/img/logo.png" className="logo" alt="Manual Brew Logo" />
+        <img src="img/logo.png" className="logo" alt="Manual Brew Logo" />
       </div>
 
       <div className="encabezado texto">

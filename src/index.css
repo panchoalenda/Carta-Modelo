@@ -186,7 +186,8 @@ header {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-.menu-item.active, .menu-item.disabled {
+.menu-item.active,
+.menu-item.disabled {
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -214,32 +215,49 @@ header {
 }
 
 .items-details {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   width: 100%;
-  /* max-width: 600px; */
   border-radius: 10px;
-  margin: 2rem auto;
-  flex-direction: column;
   align-items: center;
+  justify-items: center;
+
   text-align: center;
+  padding-bottom: 15%;
 }
 
 .item-details {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  /* max-width: 600px; */
+  max-height: 190px;
   border-radius: 10px;
   margin: 2rem auto;
-  flex-direction: column;
-  align-items: center;
+  /* flex-direction: column; */
+  align-items: start;
   text-align: center;
+  padding: 1rem;
+  /* background-color: #faf6f4; */
+
 }
 
 .item-details img {
   width: 100%;
-  max-width: 600px;
+  /* max-width: 600px; */
   border-radius: 10px;
   box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.item-details button {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item-details button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.9);
 }
 
 footer {
@@ -265,6 +283,10 @@ footer {
 a {
   color: #4E2A1E;
   text-decoration: none;
+}
+
+footer img {
+  width: 10%;
 }
 
 
@@ -313,7 +335,7 @@ a {
     background: transparent;
     border-radius: 10px;
   }
-  
+
   .menu-item.text h3 {
     padding: 8px 8px;
     font-size: 0.7rem;
@@ -322,11 +344,20 @@ a {
   }
 
   .items-details {
-    width: 90%;
-    max-width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 10%;
   }
 
+  .item-details {
+    width: 90%;
+    max-width: 100%;
+    margin: 1rem;
 
+  }
+
+  .items-details p {
+    font-size: 0.8rem;
+  }
 
   .buscador {
     width: 90%;
@@ -379,5 +410,13 @@ a {
 
   .title {
     font-size: 27px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+
+  footer img {
+    width: 30%;
   }
 }

@@ -1,4 +1,4 @@
-import ItemDetail from "./ItemDetail";
+import Item from "./Item";
 
 export const ButtonMain = ({item, onClick, selected}) => {
   const { icon, name, active } = item;
